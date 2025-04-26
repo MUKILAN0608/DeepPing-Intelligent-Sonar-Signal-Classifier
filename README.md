@@ -34,6 +34,5 @@ DeepPing is a machine learning-based sonar signal classifier built with Python a
    ```bash
    pip install numpy pandas scikit-learn joblib
 
-  Run the classifier:
-python deep_ping_classifier.py
+
 
