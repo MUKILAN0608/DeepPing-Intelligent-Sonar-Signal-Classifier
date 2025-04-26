@@ -1,31 +1,39 @@
+# 🚀 DeepPing: Intelligent Sonar Signal Classifier
 
+### 🌟 AI-powered detection of underwater objects using sonar signals. Rock or Mine? DeepPing knows.
 
-🚀 Project Title: DeepPing: Intelligent Sonar Signal Classifier
-🌟 Tagline:
-AI-powered detection of underwater objects using sonar signals. Rock or Mine? DeepPing knows.
+---
 
-📖 Project Overview:
-DeepPing is an AI-based sonar signal classification system designed to differentiate between rocks and underwater mines using sonar frequency returns. Powered by machine learning, it processes sonar data and predicts object type, helping in underwater navigation and safety systems.
+## 📌 Overview
 
-The system leverages a Logistic Regression model trained on sonar dataset signals and offers an intuitive prediction output based on input sonar readings.
+DeepPing is a machine learning-based sonar signal classifier built with Python and Scikit-learn. It predicts whether an underwater object is a **Rock** or a **Mine** by analyzing sonar signals. The model is trained on the classic Sonar dataset from UCI Machine Learning Repository.
 
-📊 Tech Stack:
-Languages: Python
+---
 
-Libraries: NumPy, Pandas, scikit-learn
+## 📊 Features
 
-Model: Logistic Regression
+- Logistic Regression-based classifier
+- Real-time prediction support (plug live sensor values)
+- Accuracy display for both training and test sets
+- Model persistence using `joblib`
+- Simple, efficient, and ready-to-deploy Python script
 
-Tools: Jupyter Notebook, Matplotlib (optional for visualization)
+---
 
-🔍 Features:
-Classifies sonar signals as Rock or Mine.
+## 📈 Dataset
 
-Uses Logistic Regression for efficient binary classification.
+- **Source**: [UCI Sonar Dataset](https://archive.ics.uci.edu/ml/datasets/connectionist+bench+(sonar,+mines+vs.+rocks))
+- 60 numeric features per sonar reading
+- Labels: `R` (Rock) or `M` (Mine)
 
-Accepts custom sonar readings for real-time predictions.
+---
 
-Designed for easy integration with web interfaces (future extension).
+## 📦 How to Run
 
-Clean, minimal Python code implementation in Jupyter Notebook.
+1. Install dependencies:
+   ```bash
+   pip install numpy pandas scikit-learn joblib
+
+  Run the classifier:
+python deep_ping_classifier.py
 
